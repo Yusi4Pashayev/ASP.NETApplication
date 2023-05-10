@@ -1,0 +1,10 @@
+﻿@using ASP.NETApplication.Models
+@model List<Student>;
+
+    @foreach(var student in Model)
+    {
+        <h1>@student.Id</h1>
+        <h2>@student.Name</h2>
+        <h3>@student.LastName</h3>
+        <h4>@student.Age</h4>
+    }
